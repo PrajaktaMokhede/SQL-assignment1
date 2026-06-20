@@ -1,0 +1,15 @@
+SELECT COUNT(*) FROM sales;
+SELECT SUM(quantity*price) FROM sales;
+SELECT AVG(quantity*price) FROM sales;
+SELECT MAX(quantity*price) FROM sales;
+SELECT MIN(quantity*price) FROM sales;
+SELECT MAX(rating) FROM sales;
+SELECT MIN(rating) FROM sales;
+SELECT AVG(rating) FROM sales;
+SELECT SUM(quantity) FROM sales;
+SELECT AVG( quantity) FROM sales;
+SELECT MAX( quantity) FROM sales;
+SELECT MIN( quantity) FROM sales;
+SELECT COUNT(*) FROM sales WHERE category= 'Electronics';
+SELECT COUNT(*) FROM sales WHERE category= 'Fashion';
+SELECT COUNT(*) FROM sales WHERE category= 'Sports';

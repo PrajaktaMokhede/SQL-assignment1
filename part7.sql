@@ -1,0 +1,15 @@
+UPDATE sales SET city = 'Mumbai' WHERE sales_id = '1';
+UPDATE sales SET rating = 4.5 WHERE sales_id = '2';
+UPDATE sales SET payment_mode = 'UPI' WHERE payment_mode = 'Card'; 
+UPDATE sales SET price = price + 500;
+UPDATE sales SET price = price - 100;
+UPDATE sales SET category = 'Gadgets' WHERE category = 'Electronics'; 
+UPDATE sales SET city = 'Pune' WHERE city = 'Nagpur'; 
+UPDATE sales SET quantity = 10 WHERE product_name = 'Laptop';
+UPDATE sales SET product_name = 'Smart Watch' WHERE product_name = 'Watch';
+UPDATE sales SET customer_name = 'Prajakta' WHERE customer_name = 'Riya';
+DELETE FROM sales WHERE customer_name = 'Akash';
+DELETE FROM sales WHERE category = 'Sports';
+DELETE FROM sales WHERE rating < 4.0;
+DELETE FROM sales WHERE payment_mode = 'Cash';
+DELETE FROM sales WHERE city = 'Jaipur';

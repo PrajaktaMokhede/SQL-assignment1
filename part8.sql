@@ -1,0 +1,15 @@
+SELECT city, COUNT(*) FROM sales GROUP BY city;
+SELECT category, COUNT(*) FROM sales GROUP BY category;
+SELECT payment_mode, COUNT(*) FROM sales GROUP BY payment_mode;
+SELECT gender, COUNT(*) FROM sales GROUP BY gender;
+SELECT city, SUM(quantity * price) FROM sales GROUP BY city;
+SELECT category, SUM(quantity * price) FROM sales GROUP BY category;
+SELECT payment_mode, SUM(quantity * price) FROM sales GROUP BY payment_mode;
+SELECT city, AVG(quantity * price) FROM sales GROUP BY city;
+SELECT category, AVG(quantity * price) FROM sales GROUP BY category;
+SELECT city, MAX(quantity * price) FROM sales GROUP BY city;
+SELECT city, MIN(quantity * price) FROM sales GROUP BY city;
+SELECT category, MAX(quantity * price) FROM sales GROUP BY category;
+SELECT category, MIN(quantity * price) FROM sales GROUP BY category;
+SELECT city,category, SUM(quantity * price) FROM sales GROUP BY city,category;
+SELECT city,payment_mode, SUM(quantity * price) FROM sales GROUP BY city,payment_mode;

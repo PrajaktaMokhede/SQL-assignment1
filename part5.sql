@@ -1,0 +1,10 @@
+SELECT customer_name,upper(customer_name) FROM sales;
+SELECT customer_name,lower(customer_name) FROM sales;
+SELECT customer_name,length(customer_name) FROM sales;
+SELECT city,length(city) FROM sales;
+SELECT customer_name,city,concat(customer_name,' ',city) FROM sales;
+SELECT customer_name,replace(customer_name,'a','@') FROM sales;
+SELECT customer_name,replace(customer_name,'e','*') FROM sales;
+SELECT customer_name,TRIM(customer_name) FROM sales;
+SELECT customer_name,substring(customer_name,1,3) FROM sales;
+SELECT city,substring(city,-2,2) FROM sales;

@@ -1,0 +1,10 @@
+SELECT city, SUM(quantity * price) FROM sales GROUP BY city ORDER BY MAX(quantity * price) limit 1;
+SELECT category, SUM(quantity * price) FROM sales GROUP BY category ORDER BY SUM(quantity * price) DESC LIMIT 1;
+SELECT payment_mode, COUNT(*) FROM sales GROUP BY payment_mode ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT category, AVG(rating) FROM sales GROUP BY category ORDER BY AVG(rating) limit 1;
+SELECT customer_name, SUM(quantity * price) FROM sales GROUP BY customer_name ORDER BY SUM(quantity * price) DESC LIMIT 1;
+SELECT product_name, SUM(quantity) FROM sales GROUP BY product_name ORDER BY SUM(quantity) DESC LIMIT 1;
+SELECT city, SUM(quantity * price) FROM sales GROUP BY city ORDER BY SUM(quantity * price) DESC LIMIT 3;
+SELECT category, SUM(quantity * price) FROM sales GROUP BY category ORDER BY SUM(quantity * price) DESC LIMIT 3;
+SELECT MONTH(order_date),COUNT(*),SUM(quantity),SUM(quantity * price),AVG(rating) FROM sales GROUP BY MONTH(order_date);
+SELECT COUNT(*) ,SUM(quantity) ,SUM(quantity * price) ,AVG(quantity * price) ,MAX(quantity * price) ,MIN(quantity * price) ,AVG(rating) FROM sales;

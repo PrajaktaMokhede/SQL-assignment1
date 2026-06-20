@@ -1,0 +1,15 @@
+SELECT price,round(price) FROM sales;
+SELECT price,ceil(price) FROM sales;
+SELECT price,floor(price) FROM sales;
+SELECT mod(quantity,2) FROM sales;
+SELECT mod(quantity,3) FROM sales;
+SELECT curdate();
+SELECT curtime();
+SELECT current_timestamp();
+SELECT year(order_date) FROM sales;
+SELECT month(order_date) FROM sales;
+SELECT day(order_date) FROM sales;
+SELECT * FROM sales where month(order_date)= 1;
+SELECT * FROM sales WHERE order_date < '2026/01/20';
+SELECT * FROM sales WHERE order_date > '2026/01/20';
+SELECT MAX(order_date) FROM sales;

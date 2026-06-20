@@ -1,0 +1,10 @@
+SELECT city, SUM(quantity * price) FROM sales GROUP BY city HAVING SUM(quantity * price) > 50000;
+SELECT category, SUM(quantity * price) FROM sales GROUP BY category HAVING SUM(quantity * price) > 60000;
+SELECT city, AVG(quantity * price) FROM sales GROUP BY city HAVING AVG(quantity * price) > 10000;
+SELECT category,AVG(rating) FROM sales GROUP BY category HAVING AVG (rating)>4.5;
+SELECT city, COUNT(*) FROM sales GROUP BY city HAVING COUNT(*) > 3;
+SELECT category, COUNT(*) FROM sales GROUP BY category HAVING COUNT(*) > 2;
+SELECT payment_mode, COUNT(*) FROM sales GROUP BY payment_mode HAVING COUNT(*) > 5;
+SELECT city, MAX(quantity * price) FROM sales GROUP BY city HAVING MAX(quantity * price) > 40000;
+SELECT category, MIN(quantity * price) FROM sales GROUP BY category HAVING MIN(quantity * price) > 1500;
+SELECT age,AVG(age) FROM sales GROUP BY age HAVING AVG(age)>25;

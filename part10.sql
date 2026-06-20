@@ -1,0 +1,10 @@
+SELECT city, SUM(quantity * price) FROM sales WHERE payment_mode = 'UPI' GROUP BY city;
+SELECT city, SUM(quantity * price) FROM sales WHERE category = 'Electronics' GROUP BY city;
+SELECT city, SUM(quantity * price) FROM sales WHERE gender = 'Female' GROUP BY city;
+SELECT city, SUM(quantity * price) FROM sales WHERE quantity * price > 5000 GROUP BY city;
+SELECT city, SUM(quantity * price) FROM sales WHERE quantity * price > 5000 GROUP BY city HAVING SUM(quantity * price) > 50000;
+SELECT category, COUNT(*) FROM sales WHERE payment_mode = 'UPI' GROUP BY category HAVING COUNT(*) > 2;
+SELECT category, SUM(quantity * price) FROM sales WHERE payment_mode = 'Card' GROUP BY category HAVING SUM(quantity * price) > 10000;
+SELECT category, COUNT(*) FROM sales WHERE rating > 4.5 GROUP BY category;
+SELECT city, SUM(quantity * price) FROM sales WHERE age > 25 GROUP BY city;
+SELECT city, SUM(quantity * price) FROM sales WHERE age > 25 GROUP BY city HAVING SUM(quantity * price) > 20000;
